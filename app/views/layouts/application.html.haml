@@ -1,0 +1,13 @@
+!!! XML
+!!! 5
+%html(lang="en")
+  %head
+    %title Testing OmniAuth
+    = stylesheet_link_tag    "application", :media => "all"
+    = javascript_include_tag "application"
+    = csrf_meta_tags
+  %body
+    %h1 Testing OmniAuth
+    - flash.each do |type, message|
+      .flash(class="flash-#{type}")= message
+    = yield

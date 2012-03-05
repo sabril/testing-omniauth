@@ -1,0 +1,9 @@
+%h2 Welcome
+
+%ul
+  - if logged_in?
+    %li== Logged into #{current_user.provider} as #{current_user.name} (#{current_user.uid})
+    %li= link_to "Logout", logout_path
+  - else
+    %li= link_to "Login with Facebook", omniauth_login_path(:facebook)
+    %li= link_to "Login with Twitter",  omniauth_login_path(:twitter)
