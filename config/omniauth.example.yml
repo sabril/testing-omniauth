@@ -1,0 +1,35 @@
+# Configure which OmniAuth providers you want to use in which environments.
+#
+# To use, put this in your config/initializers/omniauth.rb
+#
+#     Rails.application.config.middleware.use OmniAuth::Builder do
+#       YAML.load_file(Rails.root.join("config", "omniauth.yml"))[Rails.env].each do |provider, *args|
+#         provider provider, *args
+#       end
+#     end
+#
+
+development:
+- - development
+- - facebook
+  - FB_KEY
+  - FB_SECRET
+- - twitter
+  - TWITTER_KEY
+  - TWITTER_SECRET
+
+production:
+- - facebook
+  - FB_KEY
+  - FB_SECRET
+- - twitter
+  - TWITTER_KEY
+  - TWITTER_SECRET
+
+test:
+- - facebook
+  - Fake Key
+  - Fake Secret
+- - twitter
+  - Fake Key
+  - Fake Secret
