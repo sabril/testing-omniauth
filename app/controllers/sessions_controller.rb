@@ -7,15 +7,17 @@ class SessionsController < ApplicationController
 
     auth = request.env["omniauth.auth"]
 
-    puts "OmniAuth received:"
-    puts auth.to_yaml
+    unless Rails.env.test?
+      puts "OmniAuth received:"
+      puts auth.to_yaml
+    end
 
     if auth
       session.clear
       session["current_user"] = { 
         provider: auth["provider"], 
         uid:      auth["uid"],
-        name:     auth["info"]["nickname"]
+        name:     auth["info"]["name"] || auth["info"]["nickname"]
       }
     end
 
