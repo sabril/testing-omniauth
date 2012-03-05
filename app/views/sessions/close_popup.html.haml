@@ -1,0 +1,7 @@
+-# This view simply closes itself (assuming that we're inside of a popup window)
+:javascript
+  if(window.opener) {
+    window.opener.location.reload(true);
+    window.close();
+  }
+%h1 Logged in!

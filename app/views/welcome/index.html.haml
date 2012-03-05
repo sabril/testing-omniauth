@@ -5,6 +5,6 @@
     %li== Logged into #{current_user.provider} as #{current_user.name} (#{current_user.uid})
     %li= link_to "Logout", logout_path
   - else
-    %li= link_to "Login as OmniAuth Developer", omniauth_login_path(:developer)
-    %li= link_to "Login with Facebook",         omniauth_login_path(:facebook)
-    %li= link_to "Login with Twitter",          omniauth_login_path(:twitter)
+    %li= link_to "Login as OmniAuth Developer", omniauth_login_path(:developer),                   :class => "popup"
+    %li= link_to "Login with Facebook",         omniauth_login_path(:facebook) + "?display=popup", :class => "popup"
+    %li= link_to "Login with Twitter",          omniauth_login_path(:twitter),                     :class => "popup"
