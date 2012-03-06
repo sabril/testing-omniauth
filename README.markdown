@@ -6,7 +6,10 @@ Nothing magical here.  Simply followed the instructions in the [OmniAuth Integra
 
 Here's my spec: [omniauth_login_spec.rb](https://github.com/remi/testing-omniauth/blob/master/spec/acceptance/omniauth_login_spec.rb)
 
-[OmniAuth]: https://github.com/intridea/omniauth
-[RSpec]:    http://rspec.info
-[Capybara]: https://github.com/jnicklas/capybara
-[wiki]:     https://github.com/intridea/omniauth/wiki/Integration-Testing
+Another little useful gem is the [auth-response-samples][] which contains real samples of `env["omniauth.auth"]` for easy reference.
+
+[OmniAuth]:              https://github.com/intridea/omniauth
+[RSpec]:                 http://rspec.info
+[Capybara]:              https://github.com/jnicklas/capybara
+[wiki]:                  https://github.com/intridea/omniauth/wiki/Integration-Testing
+[auth-response-samples]: https://github.com/remi/testing-omniauth/tree/master/auth-response-samples
