@@ -1,0 +1,29 @@
+--- !ruby/hash:OmniAuth::AuthHash
+provider: facebook
+uid: '1266357164'
+info: !ruby/hash:OmniAuth::AuthHash::InfoHash
+  nickname: remitaylor
+  email: remi@remitaylor.com
+  name: Ryan 'remi' Taylor
+  first_name: Ryan 'remi'
+  last_name: Taylor
+  image: http://graph.facebook.com/1266357164/picture?type=square
+  urls: !ruby/hash:Hashie::Mash
+    Facebook: http://www.facebook.com/remitaylor
+credentials: !ruby/hash:Hashie::Mash
+  token: AAAAA0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  expires: false
+extra: !ruby/hash:Hashie::Mash
+  raw_info: !ruby/hash:Hashie::Mash
+    id: '1266357164'
+    name: Ryan 'remi' Taylor
+    first_name: Ryan 'remi'
+    last_name: Taylor
+    link: http://www.facebook.com/remitaylor
+    username: remitaylor
+    gender: male
+    email: remi@remitaylor.com
+    timezone: -8
+    locale: en_US
+    verified: true
+    updated_time: '2012-03-03T00:32:19+0000'
