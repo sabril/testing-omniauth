@@ -23,7 +23,9 @@ class SessionsController < ApplicationController
 
     # Currently assumes that we're in a popup window.
     # TODO add some detection so we can redirect_to root_path if not in a popup (with specs)
-    render :close_popup, :layout => nil
+    #render :close_popup, :layout => nil
+
+    redirect_to root_path
   end
 
   def destroy
